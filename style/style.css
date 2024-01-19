@@ -1,12 +1,8 @@
 @media screen and (max-width: 800px) {
   .main {
   padding: 100px !important;
-}
-
-.card {
-  transform: scale(1.5) !important;
-}
-
+  }
+  
 .icon {
   width: 200px !important;
   border: 5px dashed !important;
