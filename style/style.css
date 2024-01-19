@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main: rgba(245, 245, 245, 1);
+  --secondary: rgba(30, 30, 30, 1);
+  --accent: rgba(240, 210, 110, 1);
+}
+
+a {
+  color: var(--secondary);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--secondary);
+}
+
+.main {
+  width: 100vw;
+  background-color: var(--main);
+  background-image: url(https://i.ibb.co/zJ3Qgvt/output-onlinepngtools-1.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  min-height: 200px;
+  background-color: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.card .top {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  position: relative;
+  height: 100%;
+}
+
+.top .text p:nth-child(1) {
+  font-size: 36pt;
+  font-weight: 600;
+}
+
+.icon {
+  border-radius: 50%;
+  width: 90px;
+  border: 2px dashed var(--secondary);
+}
+
+.bottom {
+  padding: 20px;
+  width: 100%;
+}
+
+.bottom ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 10px;
+  width: 100%;
+}
+
+.bottom ul li {
+  display: flex;
+  background-color: var(--secondary);
+  width: 100%;
+  border-radius: 10px;
+}
+
+.bottom ul li a {
+  text-decoration: none;
+  color: var(--main);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 40px;
+}
+
+.arrow {
+  opacity: 0;
+  transform: translateX(-20px) scale(0.5);
+  transition: 0.2s ease-in-out;
+}
+
+.bottom > ul > li > a:hover .arrow {
+  opacity: 1;
+  transform: translateX(0px) scale(1);
+}
+
+hr {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-top: none;
+  width: 90%;
+  margin: 10px 0;
+}
+
+.hero > * {
+}
