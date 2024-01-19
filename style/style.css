@@ -30,6 +30,44 @@ a {
   color: var(--secondary);
 }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 90px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 15px;
+  position: absolute;
+  z-index: 1;
+  bottom: 130%;
+  left: 58px;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 0.65;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   color: var(--secondary);
@@ -57,6 +95,89 @@ body {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
   border-radius: 20px;
   padding: 20px;
+}
+
+.card.den {
+ padding: 50px !important;
+width: 100%;
+gap: 20px;
+}
+
+.den p {
+  line-height: 23px;
+  text-align: center;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+details {
+  width: 100%;
+}
+
+details > .text {
+  padding: 15px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+details details  {
+  background-color: rgba(0,0,0,0.075);
+  border-radius: 5px;
+}
+
+details .text img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+details .code {
+  padding: 0px 15px 15px 15px;
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+details summary {
+  padding: 10px 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: .2s ease;
+}
+
+.first {
+  font-size: 14pt;
+  font-weight: 600;
+}
+
+.first:hover {
+  box-shadow: 0 2px 5px rgba(0,0,0,.15);
+}
+
+input, button {
+  font-family: 'Montserrat', sans-serif;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px;
+  background: var(--secondary);
+  border: none;
+  border-radius: 5px;
+  color: var(--main);
 }
 
 .card .top {
@@ -124,7 +245,4 @@ hr {
   border-top: none;
   width: 90%;
   margin: 10px 0;
-}
-
-.hero > * {
 }
