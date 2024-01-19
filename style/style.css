@@ -1,23 +1,22 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .main {
-  padding: 100px;
+  padding: 100px !important;
 }
 
 .card {
-  width: 
-  height: 100%;
-  transform: scale(1.5)
+  transform: scale(1.5) !important;
 }
 
 .icon {
-  width: 200px;
-  border: 5px dashed;
+  width: 200px !important;
+  border: 5px dashed !important;
 }
 
 .top {
-  flex-direction: column;
+  flex-direction: column !important;
   gap: 10px !important;
 }
+
 }
 
 * {
