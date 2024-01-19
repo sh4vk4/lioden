@@ -74,13 +74,13 @@ body {
 }
 
 .main {
+  padding: 50px 250px;
   width: 100vw;
   background-color: var(--main);
   background-image: url(https://i.ibb.co/zJ3Qgvt/output-onlinepngtools-1.png);
   background-position: center;
   background-size: contain;
   background-attachment: fixed;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
