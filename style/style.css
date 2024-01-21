@@ -185,6 +185,10 @@ main:has(.card.den) {
   text-align: center;
 }
 
+p:has(~h3) {
+  margin-bottom: 10px
+}
+
 .section {
   width: 100%;
   display: flex;
